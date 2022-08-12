@@ -1,0 +1,19 @@
+--------------------------------
+PySide6 子ウィンドウの作り方
+--------------------------------
+参考：https://qiita.com/donkonishi/items/860007d01aa81d14f0d6
+参考：https://stackoverflow.com/questions/38611296/child-dialog-doesnt-show-up-in-pyqt5
+
+[1] form_SubDialog1.ui 新規ファイル作成　QtCreator プロジェクト名　右クリック　→　[add New] -[Qt] -[Qt Designers form] 
+	Widgetで追加
+
+[2] SubDialog1.pyファイル 新規作成
+
+[3] form_SubDialog1.ui ★編集　widgetのオブジェクト名を　SubDialog1　に変更する　（デフォルト値では form とかになっている）
+
+[4] mainwindow.py　下記記述入れる　subDialogの認識のため
+↓
+from Ui_SubDialog1 import Ui_SubDialog1
+from SubDialog1 import SubDialog1
+
+[5] mainwindow.py　下記記述入れる　subDialogの起動のため
