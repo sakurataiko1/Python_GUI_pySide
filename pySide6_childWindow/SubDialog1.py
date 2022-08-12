@@ -21,10 +21,8 @@ from Ui_SubDialog1 import Ui_SubDialog1
 
 class SubDialog1(QDialog, Ui_SubDialog1):
     def __init__(self):
-        super().__init__()
-        #super(SubDialog1, self).__init__()
-        self.setupUi(self)
-        # -start- add myk
+        #super().__init__()
+        super(SubDialog1, self).__init__()
         self.ui = Ui_SubDialog1()
         self.ui.setupUi(self)
 
