@@ -1,0 +1,14 @@
+参考にしたサイト：
+https://fereria.github.io/reincarnation_tech/11_PySide/00_Tutorial/04_widgets/
+
+
+■作成時の注意点： Ui_MainWindow ,
+・MainWindow.ui のトップオブジェクトは、オブジェクト名を MainWindow にする。
+  CustomWidget.ui のトップオブジェクトは、オブジェクト名を CustomWidget にする。
+
+  これらを PySide6-uic コマンドで　Ui_Mainwindow.py, Ui_CustomWidget.py として作成すると
+　この中で、MainWindow.py に self.ui として取り扱うための
+　Ui_MainWindow, Ui_CustomWidget の記述が入ったものになる。
+
+　Ui_MainWindow, Ui_CustomWindow　の記述を MainWindow.py, CustomWidget.py の中で使って、GUIフォームとして取り扱えるようにする。
+　
