@@ -1,0 +1,3 @@
+{
+    "files": ["CustomWidget.py","CustomWidget.ui","Ui_MainWindow.py","MainWindow.py","MainWindow.ui","Ui_CustomWidget.py"]
+}
